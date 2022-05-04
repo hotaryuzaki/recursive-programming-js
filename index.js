@@ -5,10 +5,8 @@ let x = 0;
 const addSeries = (num) => {
   if (num === 0)
     return x;
-  else {
-    x = num + addSeries(num - 1);
-    return x;
-  };
+  else
+    return x = num + addSeries(num - 1);
 }
 
 addSeries(5);
